@@ -1,6 +1,3 @@
-Here's the same README rewritten to be much more human and easy to read:
-
----
 
 # NewsWire 📰
 
