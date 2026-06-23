@@ -1,0 +1,23 @@
+# Environment files (NEVER commit secrets)
+.env
+**/.env
+news-aggregator/.env
+news-aggregator-backend/.env
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+build/
+
+# Logs
+logs/
+**/logs/*.log
+*.log
+
+# OS/editor files
+.DS_Store
+*.local
