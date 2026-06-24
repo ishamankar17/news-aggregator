@@ -106,34 +106,6 @@ npm run dev
 
 Open `http://localhost:5173` and you're good to go!
 
----
-
-## API Endpoints
-
-All routes start with `/api`.
-
-| Method | Endpoint | What it does | Login needed? |
-|--------|----------|--------------|---------------|
-| GET | `/health` | Check if server is running | No |
-| GET | `/news/headlines` | Top headlines (filter by category/country) | Optional |
-| GET | `/news/search?q=...` | Search articles | Optional |
-| GET | `/news/category/:category` | Headlines by category | Optional |
-| GET | `/news/sources` | List of news sources | No |
-| POST | `/auth/register` | Create an account | No |
-| POST | `/auth/login` | Log in | No |
-| GET | `/auth/me` | View your profile | Yes |
-| PUT | `/auth/me` | Update your profile | Yes |
-| GET | `/bookmarks` | See your saved articles | Yes |
-| POST | `/bookmarks` | Save an article | Yes |
-| DELETE | `/bookmarks/:id` | Remove a saved article | Yes |
-| DELETE | `/bookmarks` | Clear all saved articles | Yes |
-| GET | `/search-history` | See your recent searches | Yes |
-| DELETE | `/search-history` | Clear your search history | Yes |
-
-> Country-filtered headlines depend on NewsAPI's free plan, which sometimes returns no results for regions outside the US. Searching by keyword (like `q=India`) works more reliably for regional news.
-
----
-
 ## A Few Limitations Worth Knowing
 
 - **NewsAPI** (free plan) allows up to 100 requests per day.
